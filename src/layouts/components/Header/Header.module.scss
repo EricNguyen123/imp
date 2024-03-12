@@ -1,0 +1,27 @@
+.wrapper {
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--color-content-box);
+    margin-bottom: 50px;
+}
+
+.menu {
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.box-button {
+    margin-left: 60px;
+}
+
+.icon-avatar {
+    margin-right: 30px;
+}
+
+.img-avatar {
+    width: 50px;
+    height: 50px;
+}
