@@ -13,7 +13,6 @@ export const post = async ({ day }) => {
     try {
         const res = await httpRequest.post('admin/holidays', {
             day: day,
-            account_id: 'B000001',
         });
         return res;
     } catch (err) {
@@ -25,7 +24,6 @@ export const put = async ({ data }) => {
     try {
         const res = await httpRequest.put('admin/holidays/' + data.id, {
             day: data.day,
-            account_id: data.account_id,
         });
         return res;
     } catch (err) {
