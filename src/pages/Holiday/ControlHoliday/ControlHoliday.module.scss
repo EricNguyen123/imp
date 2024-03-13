@@ -7,8 +7,19 @@
 .box-holiday {
     margin-right: 10px;
     padding: 3px 6px;
-    width: 80px;
+    width: 100px;
     height: 32px;
-    border-radius: var(--border-radius-8);
-    border: 1px solid var(--color-theme);
+    border: 1px solid var(--color-border);
+}
+
+select {
+    background-color: #fff;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('/assets/images/select_choose.svg');
+    background-size: 12px;
+    background-repeat: no-repeat;
+    background-position-x: 85%;
+    background-position-y: 55%;
+    padding-left: 15px !important;
 }

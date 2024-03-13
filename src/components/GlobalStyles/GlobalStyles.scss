@@ -3,13 +3,15 @@
 :root {
     --width-content-box: 60%;
     --color-content-box: #ffffff;
-    --color-theme: #5e81ec;
-    --color-border: #b9c6eb;
+    --color-theme: #77adda;
+    --color-border: #b0b0b0;
+    --color-theme-delete: #da7777;
 
     --font-family: 'SegoeUI', sans-serif;
     --font-size-text: 16px;
 
-    --border-radius-8: 8px;
+    --border-radius-8: 5px;
+    --shadow-color-box: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
 * {

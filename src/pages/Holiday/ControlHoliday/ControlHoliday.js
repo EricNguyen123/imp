@@ -28,7 +28,7 @@ function ControlHoliday({ setDay, setMonth, setYear, resetDay, setResetDay, day,
                         setDay(e.target.value);
                     }}
                 >
-                    <option value="">day</option>
+                    <option value="">Day</option>
                     {days.map((day, index) => (
                         <option key={index} value={day}>
                             {day}
@@ -43,7 +43,7 @@ function ControlHoliday({ setDay, setMonth, setYear, resetDay, setResetDay, day,
                         setMonth(e.target.value);
                     }}
                 >
-                    <option value="">month</option>
+                    <option value="">Month</option>
                     {months.map((month, index) => (
                         <option key={index} value={month}>
                             {month}
@@ -58,7 +58,7 @@ function ControlHoliday({ setDay, setMonth, setYear, resetDay, setResetDay, day,
                         setYear(e.target.value);
                     }}
                 >
-                    <option value="">year</option>
+                    <option value="">Year</option>
                     {years.map((year, index) => (
                         <option key={index} value={year}>
                             {year}

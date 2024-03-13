@@ -11,6 +11,7 @@
     padding: 20px;
     background-color: var(--color-content-box);
     border-radius: var(--border-radius-8);
+    box-shadow: var(--shadow-color-box);
     position: relative;
 }
 
@@ -28,7 +29,7 @@
     padding: 5px;
     background-color: var(--color-content-box);
     border-radius: var(--border-radius-8);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: var(--shadow-color-box);
 }
 
 .content-notice {
@@ -59,7 +60,8 @@
 }
 
 .btn-holiday {
-    width: 60px;
+    width: 30px;
+    height: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -67,13 +69,39 @@
     padding: 3px 10px;
     border-radius: var(--border-radius-8);
     border: 1px solid var(--color-theme);
+    background-color: var(--color-theme);
+    .svg-btn {
+        fill: var(--color-content-box);
+    }
+    .text {
+        color: var(--color-content-box);
+    }
     &:hover {
         cursor: pointer;
-        background-color: var(--color-theme) !important;
+        background-color: var(--color-content-box) !important;
+        .svg-btn {
+            fill: var(--color-theme) !important;
+        }
         .text {
-            color: var(--color-content-box) !important;
+            color: var(--color-theme) !important;
         }
     }
+}
+
+.btn-delete {
+    border: 1px solid var(--color-theme-delete) !important;
+    background-color: var(--color-theme-delete) !important;
+    &:hover {
+        cursor: pointer;
+        background-color: var(--color-content-box) !important;
+        .svg-delete {
+            fill: var(--color-theme-delete) !important;
+        }
+    }
+}
+
+.btn-text {
+    width: 60px !important;
 }
 
 .content {
@@ -93,24 +121,57 @@
     flex-direction: column;
 }
 
-.item-inner-lisst {
+.item-inner-lisst,
+.line-title {
     width: 100%;
     height: 40px;
-    margin: 5px 0px;
     padding: 5px 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     border: 1px solid var(--color-border);
-    border-radius: var(--border-radius-8);
+    border-top: 0px;
+}
+
+.line-title {
+    border-top: 1px solid var(--color-border);
+    font-weight: 800;
+}
+
+.name-num,
+.numerical-order {
+    width: 10%;
+}
+
+.name-holiday {
+    width: 90%;
+}
+
+.item-holiday {
+    width: 80%;
+}
+
+.box-btn-holiday {
+    width: 10%;
 }
 
 .box-btn-holiday {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
 }
 
 .box-input-dn {
     display: none;
+    position: absolute;
+    right: 100%;
+}
+
+.pagination {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
 }
