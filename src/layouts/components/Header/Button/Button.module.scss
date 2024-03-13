@@ -1,0 +1,15 @@
+.wrapper {
+    height: 22px;
+    margin: 0px 0.5em;
+    width: max-content;
+    text-align: center;
+    text-decoration: none;
+    line-height: 18px;
+    font-family: var(--font-family);
+    font-size: 16px;
+    color: #000000;
+    cursor: pointer;
+    &:hover {
+        text-decoration: underline;
+    }
+}

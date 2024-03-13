@@ -1,0 +1,75 @@
+@import 'normalize.css';
+
+:root {
+    --width-content-box: 60%;
+    --color-content-box: #ffffff;
+    --color-theme: #77adda;
+    --color-border: #b0b0b0;
+    --color-theme-delete: #da7777;
+
+    --font-family: 'SegoeUI', sans-serif;
+    --font-size-text: 16px;
+
+    --border-radius-8: 5px;
+    --shadow-color-box: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-rendering: optimizeSpeed;
+    overflow-y: overlay;
+    background-color: #f5f5f7;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+p {
+    margin: 10px 0;
+    text-align: justify;
+    font-family: var(--font-family);
+}
+
+span {
+    font-family: var(--font-family);
+}
+
+a,
+button {
+    user-select: none !important;
+}
+
+@font-face {
+    font-family: SegoeUI;
+    src: url('/assets/fonts/SegoeUI.woff');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: SegoeUI;
+    src: url('/assets/fonts/SegoeUI.woff');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: SegoeUI;
+    src: url('/assets/fonts/SegoeUI.woff');
+    font-weight: 700;
+}

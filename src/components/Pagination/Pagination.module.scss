@@ -1,0 +1,18 @@
+.btn-page {
+    width: 25px;
+    height: 25px;
+    margin: 5px 5px;
+    border-radius: 50%;
+    border: 1px solid var(--color-border);
+    text-align: center;
+    &:hover {
+        cursor: pointer;
+        background-color: var(--color-theme) !important;
+        color: var(--color-content-box) !important;
+    }
+}
+
+.btn-return,
+.btn-next {
+    background-color: var(--color-content-box);
+}
