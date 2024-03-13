@@ -7,8 +7,6 @@ import $ from 'jquery';
 import ControlHoliday from './ControlHoliday';
 import * as HolidayService from '~/services/HolidayService';
 import Pagination from '~/components/Pagination';
-import images from '~/assets/images';
-import Image from '~/components/Image';
 
 const cx = classNames.bind(styles);
 
@@ -29,7 +27,6 @@ function Holiday() {
     const [checkBtn, setCheckBtn] = useState(0);
     const [totalPage, setTotalPage] = useState(0);
     const [page, setPage] = useState(1);
-    const [viewEdit, setViewEdit] = useState(false);
 
     const handleNoneEdit = () => {
         const boxEdit = $('.box-input-edit');
